@@ -1,0 +1,280 @@
+.newsInfo {
+    color: rgb(255, 255, 255);
+    font-size: 25pt;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px
+}
+
+.newsInfo h1 {}
+
+.newsInfo h2 {
+    font-size: 12pt;
+}
+
+.newsInfo h3 {
+    font-size: 14pt;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.newsInfo p {
+    font-size: 10pt;
+}
+
+.mainBlock {
+
+    width: 800px;
+}
+
+.mainBlock img {
+    width: 800px;
+    height: 450px;
+}
+
+.menuBlock {
+    width: 300px;
+    color: white;
+}
+
+.articleText {
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 20px;
+    font-size: 12pt;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.author {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    font-family: 'Century Gothic';
+    font-size: 12pt;
+}
+
+.edit button {
+    font-family: 'Century Gothic';
+    font-size: 8pt;
+    width: 100px;
+    height: 24px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit button:first-child {
+    background-color: burlywood;
+}
+
+.aboutPublication {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12pt;
+    margin: 10px 0px 0px 10px;
+}
+
+.aboutPublication span {
+    color: bisque;
+}
+
+.aboutPublication p {
+    font-size: 12pt;
+}
+
+.aboutPublication img {
+    height: 30px;
+    width: 30px;
+}
+
+.views {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+/* iPhone 5 in landscape */
+@media (min-device-width: 320px) and (max-device-width: 667px) and (orientation: landscape) {
+    .newsInfo {
+        font-size: 20pt;
+        width: 100%;
+        flex-direction: column;
+    }
+       
+    .newsInfo h2 {
+        font-size: 10pt;
+    }
+    
+    .newsInfo h3 {
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    .mainBlock {
+        width: 100%;
+    }
+    
+    .mainBlock img {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .menuBlock {
+        margin: 0 auto;
+    }
+    
+    .articleText {
+        width: 95%;
+        margin-top: 20px;
+    }
+    
+    .author {
+        width: 100%;
+    }
+    
+    .author img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    
+    .aboutPublication img {
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+/* iPhone 5 in portrait */
+@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .newsInfo {
+        font-size: 20pt;
+        width: 100%;
+        flex-direction: column;
+    }
+       
+    .newsInfo h2 {
+        font-size: 10pt;
+    }
+    
+    .newsInfo h3 {
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    .mainBlock {
+        width: 100%;
+    }
+    
+    .mainBlock img {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .menuBlock {
+        margin: 0 auto;
+    }
+    
+    .articleText {
+        width: 95%;
+        margin-top: 20px;
+    }
+    
+    .author {
+        width: 100%;
+    }
+    
+    .author img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    
+    .aboutPublication img {
+        height: 30px;
+        width: 30px;
+    }
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .newsInfo {
+        font-size: 20pt;
+        width: 100%;
+        flex-direction: column;
+    }
+       
+    .newsInfo h2 {
+        font-size: 10pt;
+    }
+    
+    .newsInfo h3 {
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    .mainBlock {
+        width: 100%;
+    }
+    
+    .mainBlock img {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .menuBlock {
+        margin: 0 auto;
+    }
+    
+    .articleText {
+        width: 95%;
+        margin-top: 20px;
+    }
+    
+    .author {
+        width: 100%;
+    }
+    
+    .author img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    
+    .aboutPublication img {
+        height: 30px;
+        width: 30px;
+    }
+
+}

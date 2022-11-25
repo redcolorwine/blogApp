@@ -1,0 +1,421 @@
+.personalPage {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Century Gothic';
+    margin-bottom: 100px;
+}
+
+.personalPage h1 {
+    text-align: center;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgBlock h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.imgBlock img {
+    padding-top: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+.personalData {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.personalData .aboutUser input {
+    display: block;
+    font-family: 'Century Gothic';
+    font-weight: 900;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    height: 30px;
+    width: 200px;
+}
+
+.authorInfo {
+
+    color: black;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+}
+
+.articleList {
+    margin-top: 40px;
+
+}
+
+.articleList ul {
+    margin: 0 10px 0 10px;
+    min-width: 450px;
+    padding: 25px;
+}
+
+.articleList ul li {
+    list-style: none;
+    line-height: 25px;
+    min-width: 450px;
+    background-color: rgb(222, 130, 107);
+    margin: 2px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.articleList ul li span {
+    color: bisque;
+    float: right;
+}
+
+.articleList ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-weight: 700;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.articleList ul li:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.articleList h2 {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+}
+
+.articleTypes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myArticles {
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.mostReadable {
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.articleList .mostReadable li a {
+    text-align: left;
+}
+
+.counts {
+    text-align: center;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 15px;
+    font-size: 16pt;
+    font-weight: 800;
+}
+
+.counts p span {
+    color: teal;
+}
+
+.counts button {
+    font-family: 'Century Gothic';
+    font-size: 8pt;
+    padding: 10px;
+    margin-left: 1px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+.writeBlock {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.unAuth {
+    color: bisque;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 400px;
+
+}
+
+.unAuth button {
+    font-family: 'Century Gothic';
+    font-size: 8pt;
+    padding: 10px;
+    margin-left: 1px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+/* iPhone 5 in landscape */
+@media (min-device-width: 320px) and (max-device-width: 667px) and (orientation: landscape) {
+    .personalPage {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .personalData {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imgBlock {
+        text-align: center;
+    }
+    .aboutUser {
+        text-align: center;
+    }
+    .aboutUser input {
+        margin: 0 auto;
+    }
+    .personalData .aboutUser input {
+        text-align: center; 
+    }
+
+    .articleList ul {
+        min-width: 350px;
+    }
+
+    .articleList ul li {
+        min-width: 350px;
+    }
+
+    .articleTypes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .articleList .mostReadable li a {
+        text-align: left;
+    }
+
+    .counts button {
+        font-family: 'Century Gothic';
+        font-size: 8pt;
+        padding: 10px;
+        margin-left: 1px;
+        cursor: pointer;
+        background-color: teal;
+        color: white;
+        border-radius: 5px;
+    }
+
+}
+
+/* iPhone 5 in portrait */
+@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .personalPage {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .personalData {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imgBlock {
+        text-align: center;
+    }
+    .aboutUser {
+        text-align: center;
+    }
+    .aboutUser input {
+        margin: 0 auto;
+    }
+    .personalData .aboutUser input {
+        text-align: center; 
+    }
+
+    .articleList ul {
+        min-width: 350px;
+    }
+
+    .articleList ul li {
+        min-width: 350px;
+    }
+
+    .articleTypes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .articleList .mostReadable li a {
+        text-align: left;
+    }
+
+    .counts button {
+        font-family: 'Century Gothic';
+        font-size: 8pt;
+        padding: 10px;
+        margin-left: 1px;
+        cursor: pointer;
+        background-color: teal;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .personalPage {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .personalData {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imgBlock {
+        text-align: center;
+    }
+    .aboutUser {
+        text-align: center;
+    }
+    .aboutUser input {
+        margin: 0 auto;
+    }
+    .personalData .aboutUser input {
+        text-align: center; 
+    }
+
+    .articleList ul {
+        min-width: 350px;
+    }
+
+    .articleList ul li {
+        min-width: 350px;
+    }
+
+    .articleTypes {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content:center;
+    }
+
+  
+
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .personalPage {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .personalData {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .imgBlock {
+        text-align: center;
+    }
+    .aboutUser {
+        text-align: center;
+    }
+    .aboutUser input {
+        margin: 0 auto;
+    }
+    .personalData .aboutUser input {
+        text-align: center; 
+    }
+
+    .articleList ul {
+        min-width: 350px;
+    }
+
+    .articleList ul li {
+        min-width: 350px;
+    }
+
+    .articleTypes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .articleList .mostReadable li a {
+        text-align: left;
+    }
+
+    .counts button {
+        font-family: 'Century Gothic';
+        font-size: 8pt;
+        padding: 10px;
+        margin-left: 1px;
+        cursor: pointer;
+        background-color: teal;
+        color: white;
+        border-radius: 5px;
+    }
+}

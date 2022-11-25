@@ -1,0 +1,57 @@
+.auth {
+    font-family: 'Century Gothic';
+    width: 250px;
+    margin: 0 auto;
+    grid-area: 'content';
+    align-self: center;
+}
+
+.auth h1 {
+    color: white;
+    text-align: center;
+}
+
+.auth form {
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.auth form input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.auth button {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.auth form span {
+    font-size: 8pt;
+}
+
+.auth form a {
+    color: brown;
+    font-size: 10pt;
+}
+
+.auth form p {
+    color: red;
+}
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

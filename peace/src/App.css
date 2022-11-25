@@ -1,0 +1,13 @@
+.App, .app-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.app-wrapper {
+  display: grid;
+  grid-template-areas: 'header'
+    'content'
+    'footer';
+  grid-template-rows: 1fr 10fr 1fr;
+}
+

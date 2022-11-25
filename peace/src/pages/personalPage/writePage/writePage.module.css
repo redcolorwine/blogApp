@@ -1,0 +1,247 @@
+.writePage {}
+.personalPage {
+    width: 1000px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Century Gothic';
+    margin-bottom: 100px;
+}
+
+.personalPage h1 {
+    text-align: center;
+}
+
+.personalPage .personalData img {
+    height: 200px;
+    width: 200px;
+}
+
+.personalData {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.personalData .aboutUser input {
+    display: block;
+    font-family: 'Century Gothic';
+    font-weight: 900;
+    background-color: rgb(243, 220, 186);
+    border: none;
+    height: 30px;
+    width: 200px;
+}
+
+.articleList {
+    margin-top: 40px;
+}
+
+.articleList ul {
+    margin: 0;
+    padding: 0;
+}
+
+.articleList ul li {
+    list-style: none;
+
+}
+
+.articleList ul li a {
+    color: bisque;
+}
+
+.articleTypes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.writeBlock {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.writeBlock .buttonsArea button {
+    font-family: 'Century Gothic';
+    font-size: 8pt;
+    padding: 10px;
+    margin-left: 1px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.editContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editorArea {
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+    border-bottom-left-radius: 5px;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+.editContainer .firstBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.writeBlock .firstBlock input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid whitesmoke;
+    border-top-left-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    height: 35px;
+}
+
+.editContainer input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.editContainer input[type="radio"] {
+    margin: 0;
+}
+
+.editContainer label[for="file"] {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.editContainer p {
+    text-align: center;
+}
+
+.secondBlock {
+    border: 1px solid gainsboro;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    margin-left: 5px;
+    padding: 5px;
+
+}
+
+.secondBlock h2 {
+    color: teal;
+}
+
+.cat {
+    display: flex;
+    align-items: center;
+}
+
+
+/* iPhone 5 in landscape */
+@media (min-device-width: 320px) and (max-device-width: 667px) and (orientation: landscape) {
+
+}
+
+/* iPhone 5 in portrait */
+@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .personalPage {
+        width: 99%;
+    }
+       
+    
+
+    .editContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .editorArea {
+        background-color: whitesmoke;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+        border-bottom-left-radius: 5px;
+        overflow-y: hidden;
+        height: 100%;
+    }
+    
+    .editContainer .firstBlock {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    
+    .writeBlock .firstBlock input[type="text"] {
+        width: 100%;
+    }
+    
+    
+    .secondBlock {
+        margin-left: 0px;
+    }
+     
+    .cat {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+    .personalPage {
+        width: 99%;
+    }
+       
+    
+
+    .editContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .editorArea {
+        background-color: whitesmoke;
+        color: black;
+        border-bottom: 1px solid gainsboro;
+        border-bottom-left-radius: 5px;
+        overflow-y: hidden;
+        height: 100%;
+    }
+    
+    .editContainer .firstBlock {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+    
+    .writeBlock .firstBlock input[type="text"] {
+        width: 100%;
+    }
+    
+    
+    .secondBlock {
+        margin-left: 0px;
+    }
+     
+    .cat {
+        justify-content: center;
+    }
+}

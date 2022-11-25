@@ -1,0 +1,143 @@
+.News {
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+    padding: 10px;
+}
+
+.firstBlock {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.secondBlock {
+    /* grid-template-columns: 1fr 2fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+    justify-content: center;
+    display: grid;
+}
+
+
+.thirdBlock {
+    display: grid;
+    grid-template-areas: 'header header'
+        'sidebar content';
+    grid-template-columns: 1fr 2fr;
+}
+
+.header, .content, .sidebar {
+    border: 1px solid burlywood;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* monitors and laptops */
+@media (min-width: 1240px)  {}
+
+/* tablet */
+@media (min-width: 1024px) and (max-width: 1240px)  {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* mobile */
+@media (max-width: 768px) {}
+
+/* iPad in portrait & landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px)  {}
+
+/* iPad in landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+/* iPad in portrait */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+/* Retina iPad in portrait & landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Retina iPad in landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Retina iPad in portrait */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* iPad 1 & 2 in portrait & landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){}
+
+/* iPad 1 & 2 in landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)  {}
+
+/* iPad 1 & 2 in portrait */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
+
+/* iPad mini in portrait & landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)  {}
+
+/* iPad mini in landscape */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1)  {}
+
+/* iPad mini in portrait */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1)  {}
+
+/* iPhone 5 in portrait & landscape */
+@media (min-device-width: 320px) and (max-device-width: 568px) {}
+
+/* iPhone 5 in landscape */
+@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {}
+
+/* iPhone 5 in portrait */
+@media (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .News {
+        margin: 0 auto;
+        width: 60%;
+        border-radius: 10px;
+        background-color: rgb(242, 242, 242);
+        padding: 20px;
+    }
+    
+    .firstBlock {
+        flex-direction: column;
+    }
+    
+    .secondBlock {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* iPhone 2G-4S in portrait & landscape */
+@media (min-device-width: 320px) and (max-device-width: 480px) {}
+
+/* iPhone 2G-4S in landscape */
+@media (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {}
+
+/* iPhone 2G-4S in portrait */
+@media (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {}
